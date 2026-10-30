@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cp-training-tracker"
+version = "0.1.0"
+description = "Training system: problem log with tags and difficulty, rating calculation for contests, spaced-repetition upsolving queue, weakness analysis by topic and an HTML progress dashboard."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "JANIN A APURBA", email = "japurba97@gmail.com"}]
+keywords = ["research", "automation", "reproducibility", "academic"]
+dependencies = []
+
+[project.scripts]
+cp-training-tracker = "cp_training_tracker.cli:main"
+
+[tool.setuptools]
+packages = ["cp_training_tracker"]
